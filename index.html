@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey Form</title>
+</head>
+<body id="mainroot">
+    <script src="https://kit.fontawesome.com/b7f54d6a32.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+    <img class="image" src="https://insights.weareeverise.com/hubfs/Optimized%20Content%20Management%20Blog%20Featured%20Image.png" alt="background-image"/>
+    <main id="mainform">
+        
+        <div class="headerdiv">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form class="surveyform" action="#" id="survey-form">
+            <label for="name"> Name</label>
+            <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+            required>
+            <label for="email" >Email</label>
+            <input
+            type="email"
+            placeholder="Enter your Email"
+            id="email"
+            name="email"
+            required>
+            <label for="age">Age</label>
+            <input
+            type="number"
+            placeholder="Enter your age"
+            id="number"
+            min="10" max="99"
+            name="age"
+            required>
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" id="" required>
+                <option value="" class="disabled" disabled selected >Select Current Role</option>
+                <option value="student">Student</Stu></option>
+                <option value="fullTimeJob">Full time job</option>
+                <option value="fullTimeLearner">Full time learner</option>
+                <option value="preferNotToSay">Prefer not say</option>
+                <option value="other">other</option>
+            </select>
+            <label for="">Would you recommend freeCodeCamp to a friend?</label>
+            <span class="spantext">
+                <input type="radio" name="recommend" value="definitely" id="ansDef" required>
+                <label for="">Definitely</label>
+            </span>
+            <span class="spantext">
+                <input type="radio" name="recommend" value="maybe" id="">
+                <label for="">Maybe</label>
+            </span>
+            <span class="spantext">
+                <input type="radio" name="recommend" value="notsure">
+                <label for="">Not sure</label>
+            </span>
+            <label for="">What would you like to see improved? (Check all that apply)</label>
+            <span class="spantext">
+                <input type="checkbox" name="interest1" value="frontEnd">
+                <label for="interest1">Front-end Projects</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest2" value="backEnd">
+                <label for="interest2">Back-end Projects</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest3" value="dataVisualization">
+                <label for="">Data Visualization</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest4" value="challenges">
+                <label for="">Challenges</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest5" value="openSource">
+                <label for="">Open Source Community</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest6" value="gitterHelp">
+                <label for="">Gitter Help Rooms</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest7" value="videos">
+                <label for="">Videos</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest8" value="cityMeetups">
+                <label for="interest8">City Meetups</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest9" value="wiki">
+                <label for="">Wiki</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest10" value="forum">
+                <label for="">Forum</label>
+            </span>
+            <span class="spantext">
+                <input type="checkbox" name="interest11" value="additionalCourses">
+                <label for="">Additional Courses</label>
+            </span>
+            <label for="">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here ..."></textarea>
+            <input type="submit" name="comments" value="Submit">
+        </form>
+    </main>
+</body>
+</html>

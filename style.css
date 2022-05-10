@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#mainroot {
+  height:100vh;
+  width: 100vw;
+  /* background:var(--image-url) fixed; */
+  position:relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3.5vh;
+  color: black;
+  border: 0;
+  padding: 0%;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#mainform {
+  background-color: rgba(250,200,100,0.14);
+  display: flex;
+  padding: 1px;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: stretch;
+}
+.headerdiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  justify-content: center;
+  margin-bottom: 5%;
+  background-color: rgba(0, 46, 92, 0.8);
+  border-radius: 2vw;
+  padding: 5%;
+}
+p{
+  font-style: italic;
+}
+input {
+  font-size: 0.8em;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 1vh;
+  font-weight: 100;
+  margin-bottom: 1vw;
+}
+label {
+  color: white;
+  font-weight:500;
+  /* color: rgba(186, 49, 49, 0.7); */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+textarea {
+  font-size: 0.8em;
+  border-radius: 1vw;
+  margin-bottom: 4%;
+}
+
+select {
+  font-size: 0.8em;
+  border-radius: 1vw;
+  margin-bottom: 2vh;
+}
+
+select[selected] {
+  color: blue;
+}
+
+input[type=radio]{
+  width: 2vh;
+  height: 2vh;
+}
+
+input[type=checkbox]{
+  width: 2vh;
+  height: 2vh;
+}
+option{
+  font-family: 'Times New Roman', Times, serif;
+}
+.spantext label {
+  font-weight: 400;
+}
+
+#title {
+  color:black ;
+}
+
+#description {
+  font-weight: 500;
+  color: crimson;
+}
+
+.image{
+  position:fixed;
+  filter: blur(3px) grayscale(40%);
+  width: 120vw;
+  z-index: -1;
+}
+
+.alert {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  align-self:center;
+}
+
+.fa-solid {
+  color: green;
+}
+@media (max-width:1250px) {
+  form {
+    width: 60%;
+  }
+  .image {
+    width: 120vw;
+    height:100vh;
+  }
+}
+@media (max-width:780px) {
+  form {
+    width: 70%;
+  }
+  .image {
+    width: 200vw;
+    height:100vh ;
+  }
+}
